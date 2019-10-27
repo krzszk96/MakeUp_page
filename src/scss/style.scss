@@ -20,7 +20,7 @@ body, html {
 }
 .logo{
   display: block;
-  background-image: url('../images/logo-template.png');
+  background-image: url('./images/logo-template.png');
   background-repeat:no-repeat;
   background-size: contain;
   height: 200px;
@@ -64,7 +64,7 @@ body, html {
   justify-content: center;
 }
 .first-page-photo{
-  background-image:  url('../images/model3.jpg');
+  background-image:  url('./images/model3.jpg');
   background-repeat:no-repeat;
   background-size: contain;
   width: 400px;
