@@ -20,12 +20,25 @@ body, html {
 }
 .logo{
   display: block;
-  background-image: url('./images/logo-template.png');
+  background-image: url('../images/logo-template.png');
   background-repeat:no-repeat;
   background-size: contain;
   height: 200px;
   width: 500px;
   margin: auto;
+
+    @media (max-width: 900px) {
+      width: 300px;
+      height: 150px;
+    }
+    @media (max-width: 700px) {
+      width: 150px;
+      height: 100px;
+    }
+    @media (max-width: 400px) {
+      width: 100px;
+      height: 80px;
+    }
 }
 .menu  {
   list-style-type: none;
@@ -49,6 +62,18 @@ body, html {
   padding: 14px 16px;
   text-decoration: none;
   margin: 0 25px 0 25px;
+
+    @media (max-width: 900px) {
+      margin: 0 20px 0 20px;
+    }
+    @media (max-width: 700px) {
+      margin: 0 15px 0 15px;
+      padding: 10px 12px;
+    }
+    @media (max-width: 400px) {
+      margin: 0 10px 0 10px;
+      padding: 3px 5px;
+    }
 }
 .menu li a:hover:not(.active) {
   opacity: 0.5;
@@ -64,7 +89,7 @@ body, html {
   justify-content: center;
 }
 .first-page-photo{
-  background-image:  url('./images/model3.jpg');
+  background-image:  url('../images/model3.jpg');
   background-repeat:no-repeat;
   background-size: contain;
   width: 400px;
@@ -75,17 +100,47 @@ body, html {
   color: #000;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    @media (max-width: 400px) {
+    }
 }
 .offer{
   flex-grow: 1;
   width: 30%;
   height: 100px;
   margin: 0 10px 0 10px;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+      width: 80%;
+      text-align: center;
+      font-size: 15px;
+      margin: 20px 10px 20px 10px;
+    }
+    @media (max-width: 400px) {
+      font-size: 10px;
+      margin: 10px 10px 10px 10px;
+    }
 }
 .mySlides{
   display: none;
-  //height: 400px;
-  //width: auto;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+      max-width: 300px;
+    }
+    @media (max-width: 400px) {
+      max-width: 200px;
+    }
 }
 .display-container{
   position: relative;
@@ -105,6 +160,17 @@ body, html {
     &:hover{
       opacity: 1;
       cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+    @media (max-width: 400px) {
+      padding: 8px 10px;
+      font-size: 8px;
     }
 }
 #right{
@@ -136,6 +202,15 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+      width: 80%;
+    }
+    @media (max-width: 400px) {
+      width: 60%;
+    }
 }
 input[type=submit]:hover {
   opacity: 0.7;
