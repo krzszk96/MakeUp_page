@@ -1,0 +1,152 @@
+
+body, html {
+  color: #ffff;
+  margin: 0;}
+.page {
+   min-height: 100vh;
+   max-width: 770px;
+   margin: 0 auto;
+   display: flex;
+   background: #fff;
+}
+.content-1 {
+   width: 100%;
+}
+.content {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.logo{
+  display: block;
+  background-image: url('/images/logo-template.png');
+  background-repeat:no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 500px;
+  margin: auto;
+}
+.menu  {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+}
+.menu li {
+   //float: left;
+}
+.menu li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0 25px 0 25px;
+}
+.menu li a:hover:not(.active) {
+  opacity: 0.5;
+}
+.sticky {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+.wrap{
+  display: flex;
+  justify-content: center;
+}
+.first-page-photo{
+  background-image:  url('/images/model3.jpg');
+  background-repeat:no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  margin: 100px 0 0 0;
+}
+.offer-content{
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+.offer{
+  flex-grow: 1;
+  width: 30%;
+  height: 100px;
+  margin: 0 10px 0 10px;
+}
+.mySlides{
+  display: none;
+  //height: 400px;
+  //width: auto;
+}
+.display-container{
+  position: relative;
+}
+.gallery-btn{
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.7;
+    &:hover{
+      opacity: 1;
+      cursor: pointer;
+    }
+}
+#right{
+  right: 0;
+}
+img {
+  max-width: 400px;
+  height: auto;
+}
+label{
+  color: #000;
+  font-family: sans-serif;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  opacity: 0.7;
+}
+
+
+@font-face {
+    font-family: Orange-Juice;
+    src: url(../fonts/orangejuice.ttf);
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
