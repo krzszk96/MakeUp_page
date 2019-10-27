@@ -1,6 +1,4 @@
-# krzszk96- Hangman_game
-
-Project for learnign purposes, and to use.
+# krzszk96-
 
 
 Live version:
