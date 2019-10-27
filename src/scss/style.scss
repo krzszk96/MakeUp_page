@@ -130,52 +130,33 @@ body, html {
       margin: 10px 10px 10px 10px;
     }
 }
-.mySlides{
-  display: none;
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
 
-    @media (max-width: 900px) {
-    }
-    @media (max-width: 700px) {
-      max-width: 300px;
-    }
-    @media (max-width: 400px) {
-      max-width: 200px;
-    }
+  @media screen and (max-width: 700px) {
+      flex: 40%;
+      max-width: 40%;
+  }
+  @media screen and (max-width: 400px) {
+      flex: 100%;
+      max-width: 100%;
+  }
 }
-.display-container{
-  position: relative;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
-.gallery-btn{
-  position: absolute;
-  top: 50%;
-  background-color: #000;
-  border: none;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  opacity: 0.7;
-    &:hover{
-      opacity: 1;
-      cursor: pointer;
-    }
 
-    @media (max-width: 900px) {
-    }
-    @media (max-width: 700px) {
-      padding: 10px 20px;
-      font-size: 12px;
-    }
-    @media (max-width: 400px) {
-      padding: 8px 10px;
-      font-size: 8px;
-    }
-}
-#right{
-  right: 0;
-}
 img {
   max-width: 400px;
   height: auto;
