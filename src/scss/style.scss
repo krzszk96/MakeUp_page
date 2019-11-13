@@ -4,7 +4,7 @@ body, html {
   margin: 0;}
 .page {
    min-height: 100vh;
-   max-width: 770px;
+   max-width: 1300px;
    margin: 0 auto;
    display: flex;
    background: #fff;
@@ -20,24 +20,29 @@ body, html {
 }
 .logo{
   display: block;
-  background-image: url('../images/logo-template.png');
+  background-image: url('../images/Logo-black-gold.png');
   background-repeat:no-repeat;
   background-size: contain;
-  height: 200px;
-  width: 500px;
+  background-position: center;
+  height: 250px;
+  width: auto;
   margin: auto;
 
-    @media (max-width: 900px) {
-      width: 300px;
-      height: 150px;
+    @media (max-width: 900px)  {
+      height: 200px;
+      width: auto;
+    }
+    @media (max-height: 800px)  {
+      height: 200px;
+      width: auto;
     }
     @media (max-width: 700px) {
-      width: 150px;
-      height: 100px;
+      height: 150px;
+      width: auto;
     }
     @media (max-width: 400px) {
-      width: 100px;
-      height: 80px;
+      height: 120px;
+      width: auto;
     }
 }
 .menu  {
@@ -68,11 +73,11 @@ body, html {
     }
     @media (max-width: 700px) {
       margin: 0 15px 0 15px;
-      padding: 10px 12px;
+      padding: 25px 10px;
     }
     @media (max-width: 400px) {
       margin: 0 10px 0 10px;
-      padding: 3px 5px;
+      padding: 20px 8px;
     }
 }
 .menu li a:hover:not(.active) {
@@ -91,10 +96,28 @@ body, html {
 .first-page-photo{
   background-image:  url('../images/model3.jpg');
   background-repeat:no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 400px;
   height: 400px;
-  margin: 100px 0 0 0;
+  margin: 80px 0 0 0;
+
+    @media (max-width: 900px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media (max-height: 800px)  {
+      width: 300px;
+      height: 300px;
+      margin: 30px 0 0 0;
+    }
+    @media (max-width: 700px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media (max-width: 400px) {
+      width: 250px;
+      height: 250px;
+    }
 }
 .offer-content{
   color: #000;
@@ -114,8 +137,11 @@ body, html {
 .offer{
   flex-grow: 1;
   width: 30%;
-  height: 100px;
+  height: auto;
   margin: 0 10px 0 10px;
+  text-align: center;
+  font-family: sans-serif;
+  //opacity: 0.5;
 
     @media (max-width: 900px) {
     }
@@ -129,6 +155,18 @@ body, html {
       font-size: 10px;
       margin: 10px 10px 10px 10px;
     }
+}
+.off1{
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+.price{
+  font-size: 20px;
+  margin: 20px 0 0 0;
+  font-weight: bold;
+  text-align: center;
 }
 .row {
   display: flex;
@@ -196,13 +234,223 @@ input[type=submit] {
 input[type=submit]:hover {
   opacity: 0.7;
 }
+/////////////////////gallery test////////////////////////////
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+.img-box:hover img {
+  transform: scale(1.1);
+}
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+.img-box:hover {
+  cursor: pointer;
+}
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+.opacity-low {
+  opacity: 0.5;
+}
+//////////////////////////////////end////////////////////////////////
+//footer
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:50px;
+   width:100%;
+   z-index: 1;
+}
+.footer-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:  center;
+  background: #fff;
+}
+.follow{
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: sans-serif;
 
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+    }
+    @media (max-width: 400px) {
+      font-size: 10px;
+    }
+}
+.insta-img{
+  background-image: url('../images/insta-img.png');
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin: 0 10px 0 0;
 
-@font-face {
-    font-family: Orange-Juice;
-    src: url(../fonts/orangejuice.ttf);
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+    }
+    @media (max-width: 400px) {
+      // height: 40px;
+      // width: 40px;
+      //margin: 0 30px 0 0;
+    }
+}
+.gmail-img{
+  background-image: url('../images/gmail.png');
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin: 0 50px 0 0;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+    }
+    @media (max-width: 400px) {
+      height: 35px;
+      width: 35px;
+      margin: 0 30px 0 0;
+    }
+}
+.test{
+  ///color: #b76e79;
+  color: #000;
+  font-size: 70px;
+}
+.nadine{
+  font-family: 'nadine';
+}
+.Cookie-Regular{
+  font-family: 'Cookie-Regular';
+}
+.Handlee-Regular{
+  font-family: 'Handlee-Regular';
+}
+.Mansalva-Regular{
+  font-family: 'Mansalva-Regular';
+}
+.Merienda-Bold{
+  font-family: 'Merienda-Bold';
+}
+.Merienda-Regular{
+  font-family: 'Merienda-Regular';
+}
+.Pacifico-Regular{
+  font-family: 'Pacifico-Regular';
+}
+.Playball-Regular{
+  font-family: 'Playball-Regular';
+}
+.ReenieBeanie-Regular{
+  font-family: 'ReenieBeanie-Regular';
+}
+.ShadowsIntoLight-Regular{
+  font-family: 'ShadowsIntoLight-Regular';
+}
+.Tangerine-Bold{
+  font-family: 'Tangerine-Bold';
+}
+.Tangerine-Regular{
+  font-family: 'Tangerine-Regular';
 }
 @font-face {
-    font-family: Montserrat-Regular;
-    src: url(../fonts/Montserrat-Regular.ttf);
+    font-family: 'nadine';
+    src: url(../fonts/nadine.ttf);
+}
+@font-face {
+    font-family: 'Cookie-Regular';
+    src: url(../fonts/Cookie-Regular.ttf);
+}
+@font-face {
+    font-family: 'Handlee-Regular';
+    src: url(../fonts/Handlee-Regular.ttf);
+}
+@font-face {
+    font-family: 'Mansalva-Regular';
+    src: url(../fonts/Mansalva-Regular.ttf);
+}
+@font-face {
+    font-family: 'Merienda-Bold';
+    src: url(../fonts/Merienda-Bold.ttf);
+}
+@font-face {
+    font-family: 'Merienda-Regular';
+    src: url(../fonts/Merienda-Regular.ttf);
+}
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: 'Playball-Regular';
+    src: url(../fonts/Playball-Regular.ttf);
+}
+@font-face {
+    font-family: 'ReenieBeanie-Regular';
+    src: url(../fonts/ReenieBeanie-Regular.ttf);
+}
+@font-face {
+    font-family: 'ShadowsIntoLight-Regular';
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+}
+@font-face {
+    font-family: 'Tangerine-Bold';
+    src: url(../fonts/Tangerine-Bold.ttf);
+}
+@font-face {
+    font-family: 'Tangerine-Regular';
+    src: url(../fonts/Tangerine-Regular.ttf);
 }
