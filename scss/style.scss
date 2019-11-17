@@ -98,25 +98,25 @@ body, html {
   background-repeat:no-repeat;
   background-size: cover;
   width: 400px;
-  height: 491px;
+  height: 500px;
   margin: 80px 0 0 0;
 
     @media (max-width: 900px) {
-      width: 350px;
-      height: 350px;
+      width: 320px;
+      height: 400px;
     }
     @media (max-height: 800px)  {
-      width: 300px;
-      height: 300px;
+      width: 320px;
+      height: 400px;
       margin: 30px 0 0 0;
     }
     @media (max-width: 700px) {
-      width: 300px;
+      width: 200px;
       height: 300px;
     }
     @media (max-width: 400px) {
       width: 250px;
-      height: 250px;
+      height: 310px;
     }
 }
 .offer-content{
@@ -149,13 +149,20 @@ body, html {
   background: linear-gradient(to right, #E0C9A8 0%, #bda176 100%);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  //margin: 20px 0 50px 0;
+  margin: 20px 0 50px 0;
 }
 .offinfo{
   font-size: 20px;
   margin-top: 40px;
   text-align: center;
   font-family: sans-serif;
+  @media (max-width: 900px) {
+  }
+  @media (max-width: 700px) {
+  }
+  @media (max-width: 400px) {
+    font-size: 15px;
+  }
 }
 .brushimg{
   background-image: url('../images/brush.png');
@@ -164,7 +171,7 @@ body, html {
   background-position: center;
   height: 80px;
   width: 400px;
-  margin: -25px 0 50px 0;
+  margin: 25px 0 50px 0;
 }
 .offer{
   flex-grow: 1;
@@ -183,11 +190,11 @@ body, html {
     @media (max-width: 700px) {
       width: 80%;
       text-align: center;
-      font-size: 15px;
+      font-size: 25px;
       margin: 20px 10px 20px 10px;
     }
     @media (max-width: 400px) {
-      font-size: 10px;
+      font-size: 20px;
       margin: 10px 10px 10px 10px;
     }
 }
@@ -229,7 +236,9 @@ body, html {
   vertical-align: middle;
   width: 100%;
 }
-
+.contact-form-box{
+  margin: 0 10px 0 10px;
+}
 img {
   max-width: 400px;
   height: auto;
@@ -282,6 +291,15 @@ input[type=submit]:hover {
   width: 400px;
   transform: scale(1.0);
   transition: transform 0.4s ease;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+    }
+    @media (max-width: 400px) {
+      height: 250px;
+      width: 200px;
+    }
 }
 .img-box {
   box-sizing: content-box;
@@ -293,10 +311,19 @@ input[type=submit]:hover {
   color: white;
   position: relative;
   background-color: white;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+    }
+    @media (max-width: 400px) {
+      height: 250px;
+      width: 200px;
+    }
 }
 .gallerytext{
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: 50%;
   width: 310px;
   transform: translate(-50%, -50%);
@@ -307,9 +334,26 @@ input[type=submit]:hover {
   border: 1px solid #000;
   padding: 15px;
   text-align: center;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+    }
+    @media (max-width: 400px) {
+      font-size: 15px;
+      width: 150px;
+    }
 }
 #normal{
   bottom: 33px;
+
+  @media (max-width: 900px) {
+  }
+  @media (max-width: 700px) {
+  }
+  @media (max-width: 400px) {
+    bottom: 23px;
+  }
 }
 .transparent-box {
   height: 450px;
@@ -319,6 +363,15 @@ input[type=submit]:hover {
   top: 0;
   left: 0;
   transition: background-color 0.3s ease;
+
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 700px) {
+    }
+    @media (max-width: 400px) {
+      height: 250px;
+      width: 200px;
+    }
 }
 .img-box:hover img {
   transform: scale(1.1);
