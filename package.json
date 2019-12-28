@@ -30,5 +30,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-uglify-es": "^2.0.0"
   }
 }

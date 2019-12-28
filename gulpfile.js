@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var imagemin = require('gulp-imagemin');
 var changed = require('gulp-changed');
 var htmlReplace = require('gulp-html-replace');
@@ -51,10 +51,10 @@ gulp.task('js', function(){
 });
 
 gulp.task('img', function(){
-  return gulp.src('src/img/**/*.{jpg,jpeg,png,gif}')
-  .pipe(changed('dist/img'))
+  return gulp.src('src/images/**/*.{jpg,jpeg,png,gif}')
+  .pipe(changed('dist/images'))
   .pipe(imagemin())
-  .pipe(gulp.dest('dist/img'));
+  .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('html',function(){

@@ -117,12 +117,16 @@
 
    <div class="page" id="contact">
       <div class="content">
-         <div class="contact-form-box">
+         <div class="contact-form-box" id="bookcal">
            <div class="contact-sign">REZERWACJE</div>
               <div class="calendar">
                   <div class="calendar__picture">
-                    <h2>24 Listopad 2019</h2>
-                    <h3>Niedziela</h3>
+                    <p><i class="aleft" onclick="prevMonth()"></i></p>
+                    <div class="caltext">
+                      <h2 id="disD"></h2>
+                    </div>
+
+                    <p><i class="aright" onclick="nextMonth()"></i></p>
                   </div>
                   <div class="calendar__date">
                     <div class="calendar__day">P</div>
@@ -132,54 +136,53 @@
                     <div class="calendar__day">P</div>
                     <div class="calendar__day">S</div>
                     <div class="calendar__day">N</div>
-                    <div class="calendar__number"></div>
-                    <div class="calendar__number"></div>
-                    <div class="calendar__number"></div>
-                    <div class="calendar__number"></div>
-                    <div class="calendar__number">1</div>
-                    <div class="calendar__number">2</div>
-                    <div class="calendar__number">3</div>
-                    <div class="calendar__number">4</div>
-                    <div class="calendar__number">5</div>
-                    <div class="calendar__number">6</div>
-                    <div class="calendar__number">7</div>
-                    <div class="calendar__number">8</div>
-                    <div class="calendar__number">9</div>
-                    <div class="calendar__number">10</div>
-                    <div class="calendar__number">11</div>
-                    <div class="calendar__number">12</div>
-                    <div class="calendar__number">13</div>
-                    <div class="calendar__number">14</div>
-                    <div class="calendar__number">15</div>
-                    <div class="calendar__number">16</div>
-                    <div class="calendar__number">17</div>
-                    <div class="calendar__number">18</div>
-                    <div class="calendar__number">19</div>
-                    <div class="calendar__number">20</div>
-                    <div class="calendar__number">21</div>
-                    <div class="calendar__number">22</div>
-                    <div class="calendar__number">23</div>
-                    <div class="calendar__number calendar__number--current">24</div>
-                    <div class="calendar__number">25</div>
-                    <div class="calendar__number">26</div>
-                    <div class="calendar__number">27</div>
-                    <div class="calendar__number">28</div>
-                    <div class="calendar__number">29</div>
-                    <div class="calendar__number">30</div>
+                    <div class="calendar__number" id="d1"></div>
+                    <div class="calendar__number" id="d2"></div>
+                    <div class="calendar__number" id="d3"></div>
+                    <div class="calendar__number" id="d4"></div>
+                    <div class="calendar__number" id="d5"></div>
+                    <div class="calendar__number" id="d6"></div>
+                    <div class="calendar__number" id="d7">1</div>
+                    <div class="calendar__number" id="d8">2</div>
+                    <div class="calendar__number" id="d9">3</div>
+                    <div class="calendar__number" id="d10">4</div>
+                    <div class="calendar__number" id="d11">5</div>
+                    <div class="calendar__number" id="d12">6</div>
+                    <div class="calendar__number" id="d13">7</div>
+                    <div class="calendar__number" id="d14">8</div>
+                    <div class="calendar__number" id="d15">9</div>
+                    <div class="calendar__number" id="d16">10</div>
+                    <div class="calendar__number" id="d17">11</div>
+                    <div class="calendar__number" id="d18">12</div>
+                    <div class="calendar__number" id="d19">13</div>
+                    <div class="calendar__number" id="d20">14</div>
+                    <div class="calendar__number" id="d21">15</div>
+                    <div class="calendar__number" id="d22">16</div>
+                    <div class="calendar__number" id="d23">17</div>
+                    <div class="calendar__number" id="d24">18</div>
+                    <div class="calendar__number" id="d25">19</div>
+                    <div class="calendar__number" id="d26">20</div>
+                    <div class="calendar__number" id="d27">21</div>
+                    <div class="calendar__number" id="d28">22</div>
+                    <div class="calendar__number" id="d29">23</div>
+                    <div class="calendar__number" id="d30">24</div>
+                    <div class="calendar__number" id="d31">25</div>
+                    <div class="calendar__number" id="d32">26</div>
+                    <div class="calendar__number" id="d33">27</div>
+                    <div class="calendar__number" id="d34">28</div>
+                    <div class="calendar__number" id="d35">29</div>
+                    <div class="calendar__number" id="d36"></div>
+                    <div class="calendar__number" id="d37"></div>
+                    <div class="calendar__number" id="d38"></div>
+                    <div class="calendar__number" id="d39"></div>
+                    <div class="calendar__number" id="d40"></div>
+                    <div class="calendar__number" id="d41"></div>
+                    <div class="calendar__number" id="d42"></div>
+
                   </div>
+
                 </div>
-           <!-- <form action="/action_page.php">
-                <label for="fname">Twój e-mail</label>
-                <input type="text" id="fname" name="firstname" placeholder="Wpisz swój adres e-mail">
 
-                <label for="lname">Wybrana usługa</label>
-                <input type="text" id="lname" name="lastname" placeholder="Wpisz rodzaj makijażu">
-
-                <label for="country">Data wizyty</label>
-                <input type="text" id="lname" name="lastname" placeholder="Wpisz datę wizyty dd/mm/yyyy">
-
-                <input type="submit" value="Umów się"> -->
-         </form>
          </div>
 
       </div>
