@@ -1,7 +1,6 @@
 /////////////menu sticky////////////////////
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
-
 // Get the header
 var menu = document.getElementById("menu");
 
@@ -17,8 +16,32 @@ function myFunction() {
   }
 }
 
+
 function instagram(){
     window.open("https://www.instagram.com/");
+}
+
+function showMenu(){
+    var burger = document.getElementById("menu");
+    //burger.classList.toggle("show");
+
+    if (burger.style.display === "block") {
+    burger.style.display = "none";
+    } else {
+    burger.style.display = "block";
+  }
+
+  //   if (element.classList) {
+  //   element.classList.toggle("mystyle");
+  //    } else {
+  //   var classes = element.className.split(" ");
+  //   var i = classes.indexOf("mystyle");
+  //
+  //   if (i >= 0)
+  //     classes.splice(i, 1);
+  //   else
+  //     classes.push("mystyle");
+  //     element.className = classes.join(" ");
 }
 
 // let mainNav = document.getElementById('js-menu');
